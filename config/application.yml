@@ -1,3 +1,5 @@
+server:
+  port: 8081
 spring:
   datasource:
     url: jdbc:oracle:thin:@localhost:1521:test
@@ -5,5 +7,6 @@ spring:
     password: 12345678
     driverClassName: oracle.jdbc.pool.OracleDataSource
   liquibase:
-    change-log: classpath:liquibase/db/root.xml
+    enabled: true
+    change-log: classpath:liquibase/root.xml
 
